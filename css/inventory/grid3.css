@@ -1,0 +1,231 @@
+.ldgxInventoryGrid3 *{
+    box-sizing: border-box;
+}
+
+.ldgxInventoryGrid3{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+h2.ldx-category-title {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.ldgxInventoryGrid3 .ldgxInventorySort{
+    width: 100%;
+    width: calc(100% - 2rem);
+    margin: 0 auto 2rem;
+    background: #eaeaea;
+    padding: 2rem;
+}
+
+.ldgxInventoryGrid3 .ldgxInventorySort form{
+    font-size: 14px;
+}
+
+.ldgxInventoryGrid3 .ldgxInventorySort select {
+    height: 2.4375rem;
+    margin: 0 0 0 1rem;
+    padding: 0.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #cacaca;
+    border-radius: 0;
+    background-color: #fefefe;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #0a0a0a;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+    background-origin: content-box;
+    background-position: right -1rem center;
+    background-repeat: no-repeat;
+    background-size: 9px 6px;
+    padding-right: 1.5rem;
+    -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+    transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty{
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .ldgxInventoryGrid3 .ldxGridProperty{
+        width: 50%;
+        margin: 0;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ldgxInventoryGrid3 .ldxGridProperty{
+        width: 33.333%;
+    }
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingFullSizeImgContainer{
+    padding: 0.5rem;
+    border: 1px solid #eaeaea;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingFullSizeImg{
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    position: relative;
+    display: block !important;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingFullSizeImg{
+    display: block !important;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingFullSizeImg .ldxStRate{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #0184bf;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 0.75rem;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingFullSizeImg .ldxStRate span{
+    display: block;
+    font-size: 1rem;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingName{
+    background: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingName h2{
+    font-size: 2rem;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingName a{
+    text-decoration: none;
+    color: #0184bf;
+    white-space: normal;
+}
+
+.ldxListingGridQuickInfo{
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ldxListingGridQuickInfoColumn{
+    width: 50%;
+}
+
+.ldxListingGridQuickInfoColumn .ldgxListingArea{
+    padding: 0;
+}
+
+.ldgxInventoryGrid3 .ldxGridProperty .ldgxListingFeats{
+    margin-top: 0.75rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.ldxListingGridQuickAmGrid{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+}
+
+.ldxListingGridQuickAmGrid .ldxListingGridQuickAmGridColumn .topRow,
+.ldxListingGridQuickAmGrid .ldxListingGridQuickAmGridColumn .bottomRow{
+    height: 30px;
+}
+
+.ldxListingGridQuickAmGrid .ldxListingGridQuickAmGridColumn{
+    width: 30px;
+    text-align: center;
+    color: #939598;
+}
+
+.ldxListingGridQuickAmGrid .ldxListingGridQuickAmGridColumn .topRow{
+    background-position: center top;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.ldxListingGridQuickAmGrid .bedrooms .topRow{
+    background-image: url(../icons/outlined/beds.png);
+}
+
+.ldxListingGridQuickAmGrid .bathrooms .topRow{
+    background-image: url(../icons/outlined/baths.png);
+}
+
+.ldxListingGridQuickAmGrid .noGuests .topRow{
+    background-image: url(../icons/outlined/guests.png);
+}
+
+.ldxListingGridQuickAmGrid .petsAllowed.petsYes .topRow{
+    background-image: url(../icons/outlined/pets.png);
+}
+
+.ldxListingGridQuickAmGrid .petsAllowed.petsNo .topRow{
+    background-image: url(../icons/outlined/pets-no.png);
+}
+
+.ldxListingGridQuickAmGrid .ldxListingGridQuickAmGridColumn .topRow span{
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}

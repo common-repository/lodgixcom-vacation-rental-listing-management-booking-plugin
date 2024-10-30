@@ -1,0 +1,232 @@
+.ldgxRentalSearchForm{
+    width: 100%;
+}
+
+#featured-properties-widget-container{
+    box-sizing: border-box;
+}
+
+#featured-properties-widget-container *{
+    box-sizing: border-box;
+}
+
+#featured-properties-container{
+    display: flex;
+}
+
+#featured-properties-container.ldx-featured-vertical{
+    flex-direction: column;
+    align-items: center;
+}
+
+#featured-properties-container.ldx-featured-vertical .ldx-featured-property{
+    max-width: 320px;
+    margin: 0 0 2rem;
+}
+
+#featured-properties-container.ldx-featured-horizontal,
+#featured-properties-container.ldx-featured-horizontal-left,
+#featured-properties-container.ldx-featured-horizontal-right{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#featured-properties-container.ldx-featured-horizontal{
+    justify-content: center;
+}
+
+#featured-properties-container.ldx-featured-horizontal-left{
+    justify-content: flex-start;
+}
+
+#featured-properties-container.ldx-featured-horizontal-right{
+    justify-content: flex-end;
+}
+
+
+.ldx-featured-property{
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 0 2rem 0;
+    position: relative;
+    max-width: 640px;
+    text-align: left;
+}
+
+@media only screen and (min-width: 640px) {
+
+    #featured-properties-container.ldx-featured-columns-2 .ldx-featured-property{
+        width: 50%;
+    }
+
+    #featured-properties-container.ldx-featured-columns-3 .ldx-featured-property{
+        width: 50%;
+    }
+
+    #featured-properties-container.ldx-featured-columns-4 .ldx-featured-property{
+        width: 50%;
+    }
+
+    #featured-properties-container.ldx-featured-columns-5 .ldx-featured-property{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+    #featured-properties-container.ldx-featured-columns-3 .ldx-featured-property{
+        width: 33.333%;
+    }
+
+    #featured-properties-container.ldx-featured-columns-4 .ldx-featured-property{
+        width: 25%;
+    }
+
+    #featured-properties-container.ldx-featured-columns-5 .ldx-featured-property{
+        width: 20%;
+    }
+
+}
+
+.ldx-featured-property-inner{
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    text-align: left;
+}
+
+.ldx-featured-property-upper a{
+    display: block;
+}
+
+.ldx-featured-property-img{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.ldx-featured-property-img:hover:before{
+    background: rgba(0,0,0,0.2);
+}
+
+.ldx-featured-property-img:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease;
+}
+
+.ldx-featured-property-banner{
+    color: #fff;
+    background-color: #0084bf;
+    position: absolute;
+    top: 18px;
+    left: -41px;
+    z-index: 11;
+    padding: 1px 47px;
+    z-index: 99;
+    font-size: 11px;
+    font-weight: 500;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ldx-featured-property-heart{
+
+}
+
+.ldx-featured-property-content{
+    padding: 16px 8px;
+}
+
+h3.ldx-featured-property-title{
+    margin: 0 0 8px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.ldx-featured-property-content p{
+    margin: 0;
+    display: inline-block;
+    margin: 0 8px 8px 0;
+}
+
+.ldx-featured-property-location,
+.ldx-featured-property-prop-type{
+    position: relative;
+}
+
+.ldx-featured-property-location.has-icon:before,
+.ldx-featured-property-prop-type.has-icon:before{
+    position: relative;
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 3px;
+    margin-right: 2px;
+}
+
+.ldx-featured-property-location.has-icon:before{
+    background-image: url(../icons/amenities/placeholder.svg);
+}
+
+.ldx-featured-property-prop-type.has-icon:before{
+    background-image: url(../icons/amenities/condominium.svg);
+}
+
+.ldx-featured-property-location.inline-icon svg,
+.ldx-featured-property-prop-type.inline-icon svg {
+    display: inline-block;
+    width: 18px;
+    position: relative;
+    top: 3px;
+}
+
+.desktopText{
+    display: none;
+}
+
+.mobileText{
+    display: inline-block;
+}
+
+@media only screen and (min-width: 640px) {
+    .desktopText{
+        display: inline-block;
+    }
+    .mobileText{
+        display: none;
+    }
+}
+
+ul.ldx-featured-property-details{
+    list-style: none;
+}
+
+ul.ldx-featured-property-details li{
+    display: inline-block !important;
+    position: relative;
+}
+
+ul.ldx-featured-property-details li + li:before{
+    content: "|";
+    display: inline-block;
+}
+
+.ldx-featured-property-location{
+
+}
